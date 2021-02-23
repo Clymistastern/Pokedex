@@ -48,18 +48,18 @@ class _SecondState extends State<SecondPage> {
     return Container(
       padding: EdgeInsets.all(1.1),
       child: Container(
-        decoration: BoxDecoration(color: Colors.black54),
+        decoration: BoxDecoration(color: Colors.black87),
          child:Column(
           mainAxisSize: MainAxisSize.max,
           children: [
           Image.network( post['sprites']['other']['official-artwork']['front_default'],width: 500.0,height: 500.0,scale: 0.1,),
-          Text(post['name'].toString().toUpperCase()),
-          Text("Base Experience :"),
-          Text(post['base_experience'].toString()),
-          Text("Weight :"),
-          Text(post['weight'].toString()),
-          Text("Height :"),
-          Text(post['height'].toString()),
+          Text(post['name'].toString().toUpperCase(),style: TextStyle(color: Colors.white),),
+          Text("Base Experience :",style: TextStyle(color: Colors.white)),
+          Text(post['base_experience'].toString(),style: TextStyle(color: Colors.white)),
+          Text("Weight :",style: TextStyle(color: Colors.white)),
+          Text(post['weight'].toString(),style: TextStyle(color: Colors.white)),
+          Text("Height :",style: TextStyle(color: Colors.white)),
+          Text(post['height'].toString(),style: TextStyle(color: Colors.white)),
         ],
        ),
         ),

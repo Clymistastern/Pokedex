@@ -31,12 +31,12 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Pokedexs'),
+        title: Text("Pokedexs"),
         centerTitle: true,
         backgroundColor: Colors.black,
       ),
       body: Container(
-        decoration: BoxDecoration(color: Colors.black54),
+        decoration: BoxDecoration(color: Colors.black87),
         child: Column(
           children: [
             Padding(
@@ -44,8 +44,9 @@ class _MyHomePageState extends State<MyHomePage> {
               child: TextField(
                 decoration: InputDecoration(
                   labelText: "Search",
+                  labelStyle: TextStyle(color: Colors.white),
                   contentPadding: const EdgeInsets.all(10.0),
-                  prefixIcon: Icon(Icons.search),
+                  prefixIcon: Icon(Icons.search,color: Colors.white,),
                 ),
               ),
             ),
@@ -60,7 +61,7 @@ class _MyHomePageState extends State<MyHomePage> {
                       child: ListTile(
                       title: Image.network('https://raw.githubusercontent.com/pokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${(i + 1)}.png', width: 300.0, height: 300.0,scale: 0.1,),
                       subtitle:  Text(data[i]["name"].toString().toUpperCase(),
-                      style: TextStyle(fontWeight: FontWeight.bold) ,
+                      style: TextStyle(fontWeight: FontWeight.bold,color: Colors.white) ,
                       textAlign: TextAlign.center,),
                       onTap: () {
                         Navigator.push(
@@ -75,4 +76,3 @@ class _MyHomePageState extends State<MyHomePage> {
     );
   }
 }
-
