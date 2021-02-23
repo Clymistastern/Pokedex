@@ -1,2 +1,3 @@
 # Pokedex
- Created by Charly
+ Nama : Charly Julio Aristama
+ Nim  : 535180137
