@@ -1,3 +1,3 @@
 # Pokedex
- Nama : Charly Julio Aristama
- Nim  : 535180137
+# Nama : Charly Julio Aristama
+# Nim  : 535180137
